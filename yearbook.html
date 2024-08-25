@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEARBOOK WEB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cover.css">
+</head>
+<body>
+    <!-- Cover Page -->
+    <div id="cover-page" class="cover-page" onclick="handleCoverClick('page-1')">
+        <div class="cover-content">
+            <h1>YEARBOOK<br>CSMJU</h1>
+        </div>
+    </div>
+    <!--header-->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">YEARBOOK_CSMJU</span>
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link " onclick="goToPage('page-1')">All Generation</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link " onclick="goToPage('page-2')">Generation</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link " onclick="goToPage('page-3')">Information</a></li>
+            </ul>
+    </header>    
+    <!-- Page 1 -->
+    <div class="page active" id="page-1">
+        <div class="page-content">
+            <h1>All Generation</h1>
+            <div id="card-container-1" class="card-container"></div>
+        </div>
+    </div>
+    <!-- Page 2-->
+    <div class="page" id="page-2">
+        <div class="page-content">
+            <h1>Generation</h1>
+            <div id="card-container-2" class="card-container"></div>
+        </div>
+    </div>
+    <!-- Page 3 -->
+    <div class="page" id="page-3">
+        <div class="page-content">
+            <h1>Information</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img id="fullScreenImg" src="386.jpeg" class="card-img-top" alt="29">
+                    <div class="card-body">
+                        <p class="card-text">ID 386<br>Supapit Pumnin<br>I don't always have time to study but when I do I still don't.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer id="footer">
+        <p>© 2024 YEARBOOK WEB</p>
+    </footer>
+    <script src="js/cover.js"></script>
+    <script src="js/function.js"></script>
+</body>
+</html>

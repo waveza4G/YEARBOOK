@@ -1,0 +1,147 @@
+body {
+    background-color: #f4f4d4; /* สีเบจ */
+    color: #333; 
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+.page-content h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+#footer.show {
+    display: block;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #6B8E23; /* สีเขียว */
+    text-align: center;
+    padding: 10px;
+    display: none;
+    color: #333;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Gap between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 15px; /* Padding around the container */
+}
+.card {
+    width: 200px; /* Fixed width for cards */
+    max-width: 100%; /* Responsive card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Hide overflow of content */
+    border: 1px solid #ddd; /* Light gray border */
+    background-color: #6B8E23; /* สีครีม */
+}
+.card-img-top {
+    width: 100%; /* Image takes full width of the card */
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Cover the image area while maintaining aspect ratio */
+}
+.card-body {
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text inside the card-body */
+    height: 100%; /* Ensure the card-body takes full height */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    color: #333; /* สีเขียว */
+}
+.card-text {
+    margin: 0;
+}
+/* Custom styles for larger images on page-3 */
+#page-3 .card {
+    width: 220px;
+    max-width: 100%; 
+}
+#page-3 .card-img-top {
+    height: 300px;
+     
+}
+/* สีพื้นหลังและสีตัวอักษรของลิงก์เมนูนำทาง */
+.nav-link {
+    color: #333; /* สีตัวอักษรปกติ */
+    background-color: #6B8E23; /* สีพื้นหลังของลิงก์ */
+}
+
+/* สีพื้นหลังและสีตัวอักษรของลิงก์ที่เลือกแล้ว */
+.nav-link.active {
+    color: #333; /* สีตัวอักษรเมื่อเลือกแล้ว */
+    background-color: #6B8E23; /* สีเขียวเมื่อเลือกแล้ว */
+}
+
+/* สีของลิงก์เมนูเมื่อวางเมาส์ */
+.nav-link:hover {
+    color: #333; /* สีตัวอักษรเมื่อวางเมาส์ */
+    background-color: #6B8E23; /* สีพื้นหลังเมื่อวางเมาส์ */
+}
+
+/* สีของลิงก์ที่ถูกคลิกแล้ว */
+.nav-link:visited {
+    color: #333; /* สีเขียว */
+    background-color: #6B8E23; /* สีครีม */
+}
+header {
+    font-size: 1.5rem; /* ขนาดฟอนต์ของ header */
+    padding: 1rem 2rem; /* เพิ่ม padding ข้างบนและข้างล่าง */
+}
+
+header .fs-4 {
+    font-size: 2rem; /* ขนาดฟอนต์ของข้อความใน header */
+}
+
+.nav-pills {
+    font-size: 1.25rem; /* ขนาดฟอนต์ของเมนูนำทาง */
+}
+header {
+    position: relative;
+    background-color: #6B8E23;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover {
+    background-color: #6B8E23; /* สีเขียวเมื่อ hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #6B8E23; /* สีเขียวเมื่อ hover */
+}
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #6B8E23; /* สีเขียว */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: translateX(0);
+}
